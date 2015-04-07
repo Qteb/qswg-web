@@ -1,0 +1,56 @@
+html, body {
+	height: 100%;
+	margin: 2px;
+	padding: 2px;
+	##background-color: whitesmoke;
+	font-size: 11px;
+	font-family: tahoma;
+	text-decoration: none;
+	color: black;	
+}
+
+a {
+	color: #336699;
+	outline: none;
+	text-decoration: none;
+}
+kk {
+	font-size: 15px;
+}
+a:visited {
+	color: #336699;
+	text-decoration: none;
+}
+a:hover {
+	color: #f56a1c;
+	text-decoration: underline;
+}
+
+.edit {
+	border:1px solid #9E9E9E;
+	color: #000000;
+	font-size: 15px;
+	font-family: Verdana;
+	background: #FFF; 
+}
+.edit2 {
+	border:1px solid #9E9E9E;
+	color: #000000;
+	font-size: 11px;
+	font-family: Verdana;
+	background: #FFF; 
+}
+.redframe {
+	background-color: #F2DDDD;
+	border: 1px dotted #ff0000;
+	text-align: justify;
+	color: #992A2A; 
+	padding: 5px;
+}
+.quote {
+	color: #313131;
+	background-color: #E9EDF3;
+	border: 1px dotted #101010;
+	text-align: justify;
+	padding: 4px;
+}
