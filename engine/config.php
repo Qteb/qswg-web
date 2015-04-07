@@ -10,13 +10,25 @@
 ======================================
 */
 
-/* Вывод ошибок */
-$showErrors = true; // or false
-error_reporting(E_ALL ^ E_DEPRECATED ^ E_NOTICE);
-ini_set('display_errors', $showErrors);
-ini_set('html_errors', $showErrors);
+if (!defined('Q.SWG')) die("Hacking attempt!");
 
-$site_url = $_SERVER['HTTP_HOST'];
+$site_url = $_SERVER['HTTP_HOST']."/begg";
+
+$doublelogin = false;
+
+$auth_cookie = 24*7;  // время жизни кукисов (в часах)
+
+// Время профилактики (GMT)
+$offline_hour_start = '04'; // Час начала
+$offline_hour_end = '04'; // Час окончания
+$offline_minute_start = '00'; // Минута начала
+$offline_minute_end = '05'; // Минута окончания
+
+$notes_array = array (
+	1 => 'Done',
+	2 => 'Доступ закрыт. Неверный пароль или пользователь не найден в системе.',
+	3 => 'Доступ закрыт. Пользователь заблокирован.',
+);
 
 /* Данные для входа на MySQL сервер */
 $dblocation = "localhost";

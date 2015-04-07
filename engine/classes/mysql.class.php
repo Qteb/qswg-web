@@ -1,5 +1,5 @@
 <?php
-if (!defined('Q.Short')) die("Hacking attempt!");
+if (!defined('Q.SWG')) die("Get the fuck out of here!");
 
 class parse_db
 {

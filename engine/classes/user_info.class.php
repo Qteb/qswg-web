@@ -1,4 +1,5 @@
 <?php
+if (!defined('Q.SWG')) die("Get the fuck out of here!");
 
 class check_user_info {
 	var $ip;
@@ -7,15 +8,15 @@ class check_user_info {
 	var $os;
 	var $host;
 	
-	function check_ip() { // определяем ip
+	function check_ip() { // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ip
 		$this->ip = $_SERVER["REMOTE_ADDR"];
 		return $this->ip;
 	}
-	function check_referer() { // определяем рефферал
+	function check_referer() { // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		$this->referer = $_SERVER['HTTP_REFERER'];
 		return $this->referer;
 	}
-	function check_browser($string) { // определяем браузер
+	function check_browser($string) { // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		if (strstr($string, "Chrome")) $this->browser = "Chrome";
 		elseif (strstr($string, "Opera")) $this->browser = "Opera";
 		elseif (strstr($string, "Firefox")) $this->browser = "Firefox";
@@ -25,7 +26,7 @@ class check_user_info {
 		else $this->browser = "Other";
 		return $this->browser;
 	}
-	function check_os($string) { // определяем операционную систему
+	function check_os($string) { // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		if (strstr($string, "Windows")) $this->os = "Windows";
 		elseif (strstr($string, "Linux")) $this->os = "Linux";
 		elseif (strstr($string, "Linux")) $this->os = "Linux";
@@ -39,7 +40,7 @@ class check_user_info {
 		else $this->os = "Other";
 		return $this->os;
 	}
-	function check_host() { // определяем хост
+	function check_host() { // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 		if (isset($_SERVER["HTTP_X_FORWARDED_FOR"])) { 
 			$this->host = gethostbyaddr($_SERVER["HTTP_X_FORWARDED_FOR"]);
 		} else {

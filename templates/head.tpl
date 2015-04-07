@@ -1,25 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml"> 
-<head>
+<!doctype html>
+<html>
+    <head>
+        <title>SWG AdminPanel - ${title}</title>
+        ${auto_update}
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <meta name="viewport" content="width=device-width">
 
-<!-- start head -->
+        <link rel="shortcut icon" href="../begg/favicon.ico">
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="pragma" content="no-cache" />
-<title>Q.Shortener [beta]</title>
-<meta name="Robots" content="none" /> 
-<meta name="Description" content="сервис для создания коротких url-ссылок" /> 
-<meta name="Document-state" content="Dynamic" /> 
-<link href="/favicon.ico" rel="shortcut icon" /> 
-<link href="/templates/css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootswatch/3.0.0/cyborg/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../begg/templates/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../begg/templates/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="../begg/templates/css/jquery.toastmessage.css" />
 
-<!-- start scripts -->
-
-<script src="/templates/js/main.js" type="text/javascript"></script>
-
-<!-- end scripts -->
-
-<!-- end head -->
-
-</head> 
-<body>
+        <script type="text/javascript" src="../begg/templates/js/libs/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="../begg/templates/js/libs/jquery.toastmessage.js"></script>
+        <script type="text/javascript" src="../begg/templates/js/libs/bootstrap.min.js"></script>
+    </head>
+    <body>

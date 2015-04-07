@@ -1,21 +1,13 @@
-
-<!-- start down bar -->
-
-<table border='0'>
-<tr>
-<td>© <b><a href="http://qteb.ru/about.html">Qteb Projects</a></b> 2007-{year}<br>Powered by <b>QEngine</b> v.0.3.5<br></td>
-</tr>
-</table>
-
-<!-- end down bar -->
-
-</body>
+﻿            <!-- IF '${is_logged}' == TRUE -->
+            <hr>
+            <footer>
+                <p class="pull-left">&copy; Q.Projects 2012 - ${year}</p>
+                <p class="pull-right">${size} сгенерировано за ${time} сек.</p>
+            </footer>
+            <!-- END IF -->
+        </div>
+    </body>
+            <!-- IF '${is_logged}' == TRUE -->
+            <script type="text/javascript" src="../begg/templates/js/main.js"></script>
+            <!-- END IF -->
 </html>
-
-<font color='gray'>
-<-- Время затраченное на компиляцию шаблонов: {template_parse_time} секунд --><br>
-<-- Время затраченное на выполнение MySQL запросов: {mysql_time_taken} секунд --><br>
-<-- Общее количество MySQL запросов: {query_num} --><br>
-<-- Суммарное время выполнения скрипта: {timer_total} секунд --><br>
-<-- Сгенерировано текстовой информации: {size} -->
-</font>
