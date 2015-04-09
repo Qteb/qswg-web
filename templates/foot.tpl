@@ -8,6 +8,6 @@
         </div>
     </body>
             <!-- IF '${is_logged}' == TRUE -->
-            <script type="text/javascript" src="../begg/templates/js/main.js"></script>
+            <script type="text/javascript" src="../qswg/templates/js/main.js"></script>
             <!-- END IF -->
 </html>

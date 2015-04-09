@@ -4,7 +4,7 @@ define('Q.SWG', true);
 //require_once "engine/config.php";
 //require_once "engine/connect_mysql.php";
 
-define('ROOT_DIR', $_SERVER['DOCUMENT_ROOT']."/begg");
+define('ROOT_DIR', $_SERVER['DOCUMENT_ROOT']."/qswg");
 require ROOT_DIR."/engine/engine.php";
 
 # модули

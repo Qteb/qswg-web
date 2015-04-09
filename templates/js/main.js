@@ -40,7 +40,7 @@ $(function deleteSubscription(){
     $(document).on("click", "#deleteSub", function(){
         var subId = $(this).attr('subId');
         $(this).parents("tr").hide("slow");
-        $.get("http://qteb.ru/begg/?do=subs&action=deleteSubscription&userId="+subId, function(data) {
+        $.get("http://qteb.ru/qswg/?do=subs&action=deleteSubscription&userId="+subId, function(data) {
             if (data.length > 0) {
                 var message = jQuery.parseJSON(data);
                 showMessage(message.type, message.text);
@@ -57,7 +57,7 @@ $(function deleteSubscription(){
 $(function editSubscription(){
     $(document).on("click", "#editSub", function(){
         var subId = $(this).attr('subId');
-        $.get("http://qteb.ru/begg/?do=subs&action=editSubscription&userId="+subId, function(data) {
+        $.get("http://qteb.ru/qswg/?do=subs&action=editSubscription&userId="+subId, function(data) {
             if (data.length > 0) {
                 jQuery("#subscriptionEdit").html(data);
                 $("#subscriptionEdit").show("fast");
@@ -75,7 +75,7 @@ function listSubscriptions(withForce) {
         already_length = 0;
 
     window.clearInterval(window.timer1);
-    $.get("http://qteb.ru/begg/?do=subs&action=listSubscription", function(data) {
+    $.get("http://qteb.ru/qswg/?do=subs&action=listSubscription", function(data) {
         if (already_length != data.length) {
             if (data.length > 0) {
                 jQuery("#subscriptionList").html(data);
@@ -114,7 +114,7 @@ $(function editSubmitSubscription(){
         }
 
         if (haveError == false) {
-            $.post('http://qteb.ru/begg/?do=subs&action=editSubscription', {
+            $.post('http://qteb.ru/qswg/?do=subs&action=editSubscription', {
                 userHWID: userHWID,
                 userName: userName,
                 subscriptionType: subscriptionType
@@ -158,7 +158,7 @@ $("#addSub").click(function() {
     }
 
     if (haveError == false) {
-        $.post('http://qteb.ru/begg/?do=subs&action=addSubscription', {
+        $.post('http://qteb.ru/qswg/?do=subs&action=addSubscription', {
             userHWID: userHWID,
             userName: userName,
             subscriptionType: subscriptionType

@@ -2,7 +2,7 @@
 
 if (isset($_GET['action']) AND $_GET['action']=='checkSubscription') {
 	define('Q.SWG', TRUE);
-	define('ROOT_DIR', $_SERVER['DOCUMENT_ROOT'] . "/begg");
+	define('ROOT_DIR', $_SERVER['DOCUMENT_ROOT'] . "/qswg");
 	define('ENGINE_DIR', ROOT_DIR . '/engine');
 	define('FUNCTIONS_DIR', ENGINE_DIR . '/functions');
 

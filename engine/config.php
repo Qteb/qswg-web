@@ -12,7 +12,7 @@
 
 if (!defined('Q.SWG')) die("Hacking attempt!");
 
-$site_url = $_SERVER['HTTP_HOST']."/begg";
+$site_url = $_SERVER['HTTP_HOST']."/qswg";
 
 $doublelogin = false;
 
@@ -33,7 +33,5 @@ $notes_array = array (
 /* Данные для входа на MySQL сервер */
 $dblocation = "localhost";
 $dbuser = "phpUser";
-$dbpasswd = "vtHUAMos";
-$dbname = "baseBEGG";
 
 ?>

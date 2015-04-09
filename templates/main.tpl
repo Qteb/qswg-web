@@ -43,7 +43,7 @@
 
                     <h4>Список пользователей:</h4>
                     <div class="well" id="subscriptionList">
-                        <center><img src="http://qteb.ru/begg/templates/images/loading.gif" border="0" align="middle"></center>
+                        <center><img src="http://qteb.ru/qswg/templates/images/loading.gif" border="0" align="middle"></center>
                     </div>
                 </div>
 
