@@ -15,7 +15,7 @@ header("Content-Type: text/html; charset=utf-8");
 /* Вывод ошибок
  * true or false
  */
-$showErrors = FALSE;
+$showErrors = TRUE;
 //error_reporting(E_ALL ^ E_DEPRECATED ^ E_NOTICE);
 error_reporting(E_ALL^E_NOTICE);
 ini_set('display_errors', $showErrors);
@@ -28,9 +28,11 @@ define('CLASSES_DIR', ENGINE_DIR.'/classes');
 define('FUNCTIONS_DIR', ENGINE_DIR.'/functions');
 define('INCLUDE_DIR', ENGINE_DIR.'/include');
 define('MODULE_DIR', ENGINE_DIR.'/modules');
+define('CONFIG_DIR', ENGINE_DIR.'/configs');
 
 /* Подключение исполняемых файлов */
-require_once ENGINE_DIR."/config.php";
+require_once CONFIG_DIR."/default.php";
+require_once CONFIG_DIR."/production.php";
 
 @ob_start();
 @ob_implicit_flush(0);
