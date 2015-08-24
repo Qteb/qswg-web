@@ -16,7 +16,7 @@ $site_url = $_SERVER['HTTP_HOST'];
  
 $doublelogin = true;
 
-$auth_cookie = 24;  // время жизни кукисов (в часах)
+$auth_cookie = 24*7;  // время жизни кукисов (в часах)
 
 // Время профилактики (GMT)
 $offline_hour_start = '04'; // Час начала
